@@ -170,7 +170,7 @@
         <div class="right-side">
             <section class="login-form">
                 <h2> Admin Login</h2>
-                <form id="loginForm">
+                <form id="loginForm" action="LoginServlet" method="post">
                     <label for="username">Username</label>
                     <input type="text" id="username" placeholder="Enter your username" required>
 

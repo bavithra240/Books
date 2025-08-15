@@ -139,7 +139,7 @@
         <div class="right-side">
             <section class="login-form">
                 <h2>Register</h2>
-                <form id="registerForm">
+                <form id="registerForm" action="RegisterServlet" method="post">
                     <label for="username">Username</label>
                     <input type="text" id="username" placeholder="Enter your username" required>
 
