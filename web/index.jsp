@@ -156,11 +156,11 @@
   <header>
     <div class="logo">Pahana <span style="color:black">Edu</span></div>
     <nav>
-      <a href="Home.html">Home</a>
-      <a href="#">Categories</a>
-      <a href="#">Shop</a>
-      <a href="#">Books</a>
-      <a href="#">Blog</a>
+      <a href="Home.jsp">Home</a>
+      <a href="Categories.jsp">Categories</a>
+      <a href="Shop.jsp">Shop</a>
+      <a href="Books.jsp">Books</a>
+      <a href="Blog.jsp">Blog</a>
     </nav>
     <input class="search-bar" type="text" placeholder="Search by Keywords">
     <div class="hero-text">
