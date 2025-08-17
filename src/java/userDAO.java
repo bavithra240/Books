@@ -10,11 +10,9 @@ public class userDAO {
 
     public boolean registerUser(user users) {
         boolean isRegistered = false;
-
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-
-            try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
+           try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD)) {
                 String sql = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
                 try (PreparedStatement stmt = conn.prepareStatement(sql)) {
                     stmt.setString(1, users.getUsername());
@@ -24,11 +22,9 @@ public class userDAO {
                     isRegistered = rowsInserted > 0;
                 }
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return isRegistered;
     }
 }

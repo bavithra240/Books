@@ -13,7 +13,6 @@ public class Reservation {
     private String email;
     private String bookTitle;
     private String reservationDate;
-
     // Constructor
     public Reservation(String customerName, String email, String bookTitle, String reservationDate) {
         this.customerName = customerName;
@@ -21,7 +20,6 @@ public class Reservation {
         this.bookTitle = bookTitle;
         this.reservationDate = reservationDate;
     }
-
     // Getter & Setter methods
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
